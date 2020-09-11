@@ -1,0 +1,570 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+        <title>Clideo — Online Video Tools</title>
+
+        
+                    <meta name="description" content="Clideo — the platform that makes it super easy to edit all your video files, images and GIFs. And yes, free."/>
+        
+                    <link rel="canonical" href="https://clideo.com/" />
+        
+        <link rel="preload" href="https://static.clideo.com/assets/js/manifest.js?id=83adbde5cba1be644f844" as="script" crossorigin="anonymous"/>
+        <link rel="preload" href="https://static.clideo.com/assets/js/vendor-common.js?id=b61b014e0666bdcd943e6" as="script" crossorigin="anonymous"/>
+        <link rel="preload" href="https://static.clideo.com/assets/js/app.js?id=b5543edcaaa7516583eb6" as="script" crossorigin="anonymous"/>
+
+        <link rel="shortcut icon" href="https://static.clideo.com/favicon.ico"/>
+        <link rel="icon" type="image/png" sizes="64x64" href="https://static.clideo.com/assets/images/favicon/64x64.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="https://static.clideo.com/assets/images/favicon/16x16.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://static.clideo.com/assets/images/favicon/apple-touch-icon-180x180-precomposed.png"/>
+
+        <!-- CSRF Stuff -->
+        <meta name="csrf-token" content="RYGE09RBSJ3p4T8DjXpe1YTRWyY4nZ1VN936RscB">
+        <script>
+            window.Laravel = {csrfToken: 'RYGE09RBSJ3p4T8DjXpe1YTRWyY4nZ1VN936RscB'}
+        </script>
+
+                    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" crossorigin="anonymous"/>
+        
+        <link href="https://static.clideo.com/assets/css/app.css" media="all" rel="stylesheet" type="text/css" crossorigin="anonymous"/>
+
+        <script>
+  window.onerror = function (msg, url, line, column, errorObj) {
+    var req = new XMLHttpRequest();
+    var params = "msg=" + encodeURIComponent(msg) + '&url=' + encodeURIComponent(url) + "&line=" + line + "&column=" + column + "&err_obj=" + errorObj;
+    req.open("GET", "/js/track?" + params);
+    req.send(null);
+  };
+</script>
+        <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138284640-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-138284640-1');
+</script>
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    </head>
+    <body>
+        
+        <svg style="width: 0; height: 0; position: absolute;" aria-hidden="true" focusable="false">
+    <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient1">
+        <stop offset="0" stop-color="#1b9ee0"></stop>
+        <stop offset="1" stop-color="#06d38f"></stop>
+    </linearGradient>
+    <symbol viewBox="0 0 24 20" id="svg-from-gdrive">
+        <path fill="#0DA960" d="M4.476,20l-4.021-6.961L7.98,0L12,6.96L4.476,20z"></path>
+        <path fill="#3279F1" d="M4.476,20l4.02-6.961h15.05L19.525,20H4.476z"></path>
+        <path fill="#FBCB43" d="M23.545,13.039h-8.039L7.98,0h8.039L23.545,13.039z"></path>
+        <path fill="#2D6FDD" d="M12,13.039H8.495L10.239,10L4.476,20L12,13.039z"></path>
+        <path fill="#E5B93C" d="M15.506,13.039h8.039L13.761,10L15.506,13.039z"></path>
+        <path fill="#0C9B57" d="M10.239,10L12,6.96L7.98,0L10.239,10z"></path>
+    </symbol>
+    <symbol viewBox="0 0 24 20" id="svg-from-dropbox">
+        <path fill="#00a9f1" d="M12,3.813L6.172,7.525L0.345,3.813L6.172,0.1L12,3.813z M17.828,0.1L12,3.813l5.828,3.713l5.827-3.713L17.828,0.1zM0.345,11.236l5.827,3.713L12,11.236L6.172,7.525L0.345,11.236z M17.828,7.525L12,11.236l5.828,3.713l5.827-3.713L17.828,7.525zM6.172,16.189L12,19.9l5.828-3.711L12,12.477L6.172,16.189z"></path>
+    </symbol>
+    <symbol id="svg-share-fb" viewBox="0 0 22 22">
+        <path d="M12,18.985H8.999V12.02H6.004V9.007h2.995V7.142c0-2.679,1.237-4.127,4.397-4.127h2.6V5.98h-2.52c-1.23,0-1.471,0.729-1.471,1.585L12,9.007h3.981l-0.011,3.012H12V18.985z"></path>
+    </symbol>
+    <symbol id="svg-share-tw" viewBox="0 0 22 22">
+        <path d="M19.614,5.858c-0.634,0.281-1.315,0.471-2.03,0.557c0.73-0.438,1.291-1.131,1.555-1.956c-0.684,0.405-1.439,0.7-2.245,0.858C16.249,4.63,15.33,4.2,14.313,4.2c-1.952,0-3.535,1.583-3.535,3.535c0,0.277,0.031,0.547,0.092,0.805C7.933,8.394,5.328,6.986,3.585,4.848C3.281,5.37,3.106,5.978,3.106,6.624c0,1.227,0.624,2.309,1.572,2.942C4.1,9.548,3.555,9.39,3.078,9.125c0,0.015,0,0.029,0,0.044c0,1.713,1.218,3.14,2.835,3.465c-0.297,0.081-0.609,0.124-0.931,0.124c-0.228,0-0.449-0.021-0.665-0.063c0.45,1.404,1.755,2.427,3.302,2.454c-1.21,0.949-2.734,1.514-4.39,1.514c-0.286,0-0.567-0.017-0.843-0.05c1.564,1.003,3.422,1.589,5.418,1.589c6.5,0,10.057-5.387,10.057-10.056c0-0.153-0.004-0.307-0.011-0.458C18.541,7.189,19.141,6.567,19.614,5.858z"></path>
+    </symbol>
+    <symbol id="svg-share-pt" viewBox="0 0 22 22">
+        <path d="M11.008 1.98499C6.033 1.98499 2 6.01899 2 10.992C2 14.811 4.372 18.072 7.723 19.385C7.641 18.674 7.575 17.576 7.752 16.797C7.916 16.094 8.805 12.319 8.805 12.319C8.805 12.319 8.538 11.779 8.538 10.985C8.538 9.73299 9.265 8.79799 10.169 8.79799C10.94 8.79799 11.311 9.37599 11.311 10.065C11.311 10.837 10.821 11.994 10.562 13.068C10.347 13.966 11.014 14.7 11.897 14.7C13.498 14.7 14.728 13.01 14.728 10.577C14.728 8.41999 13.179 6.91499 10.963 6.91499C8.398 6.91499 6.892 8.83599 6.892 10.822C6.892 11.593 7.189 12.423 7.559 12.875C7.633 12.966 7.641 13.046 7.619 13.136C7.552 13.417 7.396 14.033 7.367 14.157C7.33 14.321 7.234 14.358 7.063 14.277C5.936 13.75 5.232 12.112 5.232 10.784C5.232 7.94499 7.293 5.33499 11.185 5.33499C14.305 5.33499 16.738 7.55899 16.738 10.54C16.738 13.645 14.78 16.146 12.066 16.146C11.155 16.146 10.295 15.671 10.006 15.107C10.006 15.107 9.554 16.827 9.443 17.249C9.243 18.036 8.694 19.014 8.324 19.615C9.169 19.874 10.059 20.014 10.992 20.014C15.967 20.014 20 15.982 20 11.007C20.015 6.01899 15.981 1.98499 11.008 1.98499Z"></path>
+    </symbol>
+    <symbol id="svg-file-edit" viewBox="0 0 18 18">
+        <path d="M15.375 2.625C14.236 1.486 13.369 1 12.475 1C11.364 1 10.611 1.752 9.74 2.625L1.998 10.367C1.844 10.519 1.745 10.718 1.715 10.931L1.01 15.857C0.965 16.17 1.07 16.484 1.293 16.707C1.482 16.896 1.737 17 2 17C2.047 17 2.094 16.997 2.142 16.99L7.068 16.286C7.281 16.255 7.48 16.156 7.633 16.003L15.375 8.262C17.025 6.612 17.991 5.242 15.375 2.625ZM3.178 14.82L3.574 12.048C3.954 12.178 4.48 12.445 5.021 12.987C5.556 13.524 5.821 14.047 5.953 14.424L3.178 14.82ZM7.546 13.262C7.306 12.757 6.939 12.191 6.377 11.628C5.813 11.063 5.246 10.693 4.741 10.451L9.425 5.769L12.231 8.577L7.546 13.262ZM13.961 6.847L13.574 7.233L10.767 4.425L11.154 4.039C11.688 3.504 12.192 3 12.475 3C12.609 3 13.022 3.101 13.961 4.038C15.364 5.443 15.338 5.47 13.961 6.847Z"></path>
+    </symbol>
+    <symbol id="svg-file-copy" viewBox="0 0 18 18">
+        <path d="M13 1H9C7.343 1 6 2.343 6 4V5H5C3.343 5 2 6.343 2 8V14C2 15.656 3.343 17 5 17H9C10.656 17 12 15.656 12 14V13H13C14.656 13 16 11.656 16 10V4C16 2.343 14.656 1 13 1ZM10 14C10 14.553 9.553 15 9 15H5C4.448 15 4 14.553 4 14V8C4 7.448 4.448 7 5 7H6V10C6 11.656 7.343 13 9 13H10V14ZM14 10C14 10.553 13.553 11 13 11H9C8.448 11 8 10.553 8 10V4C8 3.448 8.448 3 9 3H13C13.553 3 14 3.448 14 4V10Z"></path>
+    </symbol>
+    <symbol id="svg-file-rename" viewBox="0 0 18 18">
+        <path d="M7.929 3.628C7.776 3.249 7.409 3 7 3C6.591 3 6.224 3.249 6.072 3.629L2.072 13.629C1.867 14.143 2.116 14.725 2.629 14.93C3.142 15.134 3.723 14.885 3.929 14.371L4.877 12H9.123L10.071 14.371C10.229 14.764 10.604 15 11 15C11.124 15 11.25 14.979 11.371 14.928C11.884 14.723 12.134 14.141 11.929 13.628L7.929 3.628ZM5.677 10L7 6.692L8.323 10H5.677ZM15 2V16H16.5V17H12.5V16H14V2H12.5V1H16.5V2H15Z"></path>
+    </symbol>
+    <symbol id="svg-file-del" viewBox="0 0 18 18">
+        <path d="M10 1C11.654 1 13 2.346 13 4H16V6H2V4H5C5 2.346 6.346 1 8 1H10ZM8 3C7.449 3 7 3.449 7 4H11C11 3.449 10.553 3 10 3H8ZM12 15C12.553 15 13 14.553 13 14V7H15V14C15 15.654 13.654 17 12 17H6C4.346 17 3 15.654 3 14V7H5V14C5 14.553 5.449 15 6 15H12ZM8 7H7V14H8V7ZM10 7H11V14H10V7Z"></path>
+    </symbol>
+</svg>
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+<div class="softobar">
+    <div class="softobar-container">
+        <div class="softobar-logo">
+            <a href="https://softo.co/" target="_blank" rel="noopener" aria-label="Go to softo.co company web page">
+                <svg width="50" height="19" viewBox="0 0 50 19">
+                    <path d="M28.698 7.264v-.01h1.793V4.246h3.65v2.972h2.66v2.764h-2.66v4.32c-.03.424.08.844.312 1.199.285.298.694.445 1.104.396.191.014.384.014.575 0a1.99 1.99 0 0 0 .51-.132v2.717a6.896 6.896 0 0 1-2.123.34 5.566 5.566 0 0 1-1.887-.283 2.953 2.953 0 0 1-1.236-.821 3.208 3.208 0 0 1-.67-1.274 6.189 6.189 0 0 1-.207-1.65v-4.774h-.35v.01h-2.518v8.49h-3.726v-8.49h-2.067V7.263h2.067V6.132a8.425 8.425 0 0 1 .226-1.981c.14-.6.406-1.163.783-1.651a3.83 3.83 0 0 1 1.5-1.132 5.792 5.792 0 0 1 2.34-.425c.315 0 .63.019.943.057.287.034.571.09.849.17l-.236 2.943A3.245 3.245 0 0 0 29.85 4a3.396 3.396 0 0 0-.548 0c-.29-.014-.58.048-.84.18a1.34 1.34 0 0 0-.5.49 2.028 2.028 0 0 0-.245.688 4.35 4.35 0 0 0-.066.774v1.132h1.047zm-20.84 3.283a4.189 4.189 0 0 0-1.066-.726A2.962 2.962 0 0 0 5.5 9.528a2.283 2.283 0 0 0-.943.208.717.717 0 0 0-.444.698.698.698 0 0 0 .49.68c.513.19 1.04.342 1.576.452.438.095.867.224 1.283.387.42.16.815.383 1.17.66.346.272.632.612.84 1 .222.435.333.918.32 1.406a3.377 3.377 0 0 1-1.556 2.99 4.84 4.84 0 0 1-1.557.66 7.547 7.547 0 0 1-1.726.208 8.557 8.557 0 0 1-2.736-.48A5.66 5.66 0 0 1 0 17.122l2.085-2.198a4.18 4.18 0 0 0 1.226.943c.48.24 1.01.362 1.547.358.312-.002.619-.076.897-.217a.774.774 0 0 0 .443-.764.811.811 0 0 0-.547-.773 9.774 9.774 0 0 0-1.698-.52 8.802 8.802 0 0 1-1.18-.367 3.698 3.698 0 0 1-1.056-.613 3.038 3.038 0 0 1-.764-.944A2.896 2.896 0 0 1 .66 10.67a3.292 3.292 0 0 1 .434-1.736 3.66 3.66 0 0 1 1.114-1.17 4.972 4.972 0 0 1 1.509-.67 6.538 6.538 0 0 1 1.641-.217c.843 0 1.68.134 2.482.397.767.23 1.473.63 2.066 1.17l-2.048 2.103zm14.567 2.274a6.085 6.085 0 0 1-.5 2.5 5.66 5.66 0 0 1-1.359 1.887 6.226 6.226 0 0 1-2 1.188 7.038 7.038 0 0 1-4.887 0 6.075 6.075 0 0 1-2-1.217 5.66 5.66 0 0 1-1.349-1.887 6.094 6.094 0 0 1-.5-2.5 6.019 6.019 0 0 1 .5-2.49 5.604 5.604 0 0 1 1.35-1.887 5.887 5.887 0 0 1 2-1.15 7.406 7.406 0 0 1 4.848 0c.737.259 1.416.66 2 1.178a5.528 5.528 0 0 1 1.359 1.887 6 6 0 0 1 .538 2.49zm-3.585 0c0-.363-.06-.724-.18-1.066a2.83 2.83 0 0 0-.518-.944 2.66 2.66 0 0 0-.84-.641 2.83 2.83 0 0 0-2.311 0 2.519 2.519 0 0 0-.83.641c-.227.28-.397.6-.5.944a3.425 3.425 0 0 0 0 2.132c.11.343.282.663.509.943a2.5 2.5 0 0 0 .84.67 2.83 2.83 0 0 0 2.31 0 2.5 2.5 0 0 0 .84-.67c.227-.28.4-.6.51-.943.113-.344.17-.704.17-1.066zm30.217 0a6.085 6.085 0 0 1-.5 2.5 5.66 5.66 0 0 1-1.359 1.887 6.226 6.226 0 0 1-2 1.188 7.038 7.038 0 0 1-4.849 0 6.075 6.075 0 0 1-2-1.217A5.66 5.66 0 0 1 37 15.292a6.094 6.094 0 0 1-.5-2.5 6.019 6.019 0 0 1 .5-2.49 5.604 5.604 0 0 1 1.35-1.887 5.887 5.887 0 0 1 2-1.18 7.406 7.406 0 0 1 4.848 0c.737.26 1.416.661 2 1.18a5.528 5.528 0 0 1 1.359 1.887 6 6 0 0 1 .5 2.519zm-3.585 0c0-.363-.06-.724-.18-1.066a2.83 2.83 0 0 0-.518-.944 2.66 2.66 0 0 0-.84-.641 2.83 2.83 0 0 0-2.311 0 2.519 2.519 0 0 0-.83.641c-.227.28-.397.6-.5.944a3.425 3.425 0 0 0 0 2.132c.11.343.282.663.509.943a2.5 2.5 0 0 0 .84.67 2.83 2.83 0 0 0 2.31 0 2.5 2.5 0 0 0 .84-.67c.227-.28.4-.6.51-.943.113-.344.17-.704.17-1.066z"></path>
+                </svg>
+            </a>
+        </div>
+        <nav class="softobar-nav">
+            <ul class="softobar-links">
+
+                                    <li class="nav-item ">
+                        <a href="https://convertio.co/"  target="_blank" rel="noopener" >File Converter</a>
+                    </li>
+                                    <li class="nav-item ">
+                        <a href="https://convertio.co/video-converter/"  target="_blank" rel="noopener" >Video Converter</a>
+                    </li>
+                                    <li class="nav-item ">
+                        <a href="https://convertio.co/audio-converter/"  target="_blank" rel="noopener" >Audio Converter</a>
+                    </li>
+                                    <li class="nav-item ">
+                        <a href="https://convertio.co/ocr/"  target="_blank" rel="noopener" >OCR Online</a>
+                    </li>
+                                    <li class="nav-item ">
+                        <a href="https://clideo.com/cut-audio" >MP3 Cutter</a>
+                    </li>
+                                    <li class="nav-item ">
+                        <a href="https://clideo.com/merge-audio" >Audio Joiner</a>
+                    </li>
+                                    <li class="nav-item  new-item ">
+                        <a href="https://clideo.com/slideshow-maker" >Slideshow Maker</a>
+                    </li>
+                                    <li class="nav-item ">
+                        <a href="https://convertio.co/mp3-converter/"  target="_blank" rel="noopener" >MP3 Converter</a>
+                    </li>
+                                    <li class="nav-item  new-item ">
+                        <a href="https://clideo.com/add-subtitles-to-video" >Add Subtitles to Video</a>
+                    </li>
+                                    <li class="nav-item ">
+                        <a href="https://clideo.com/video-maker" >Video Maker</a>
+                    </li>
+                
+                <li class="softobar-more hidden"><a href="#">more</a>
+                    <ul class="hidden-links"></ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+        <div class="main-container index" id="app">
+            <header class="header">
+    <div class="header-main">
+        <div class="container">
+            <div class="header-inner">
+                                <div class="logo">
+                    <a href="/" aria-label="Main page">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="123px" height="32px" viewBox="0 0 246 64">
+                            <defs>
+                                <linearGradient x1="0" x2="0" y1="0" y2="1" id="hLogoGradient">
+                                    <stop offset="0" stop-color="#1b9ee0"></stop>
+                                    <stop offset="1" stop-color="#06d38f"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#hLogoGradient)" d="M49.835,25.169c-5.08-4.58-10.699-8.68-16.84-12.219c-6.141-3.541-12.5-6.381-19-8.48
+  c-3.1-1.039-6.24-1.881-9.381-2.58C3.636,4.97,2.815,8.11,2.155,11.31c-1.42,6.68-2.16,13.58-2.16,20.68s0.74,14.02,2.16,20.701
+  c0.66,3.199,1.48,6.34,2.459,9.42c3.141-0.701,6.281-1.541,9.381-2.58c6.5-2.1,12.859-4.92,19-8.48
+  c6.141-3.541,11.76-7.641,16.84-12.221c2.439-2.16,4.74-4.439,6.92-6.82C54.575,29.61,52.274,27.329,49.835,25.169z M13.995,45.851
+  V18.149l24,13.859L13.995,45.851z"></path>
+                            <path class="logo-text" fill="#333333" d="M89.762,44.46c-7.071,0-11.888-5.284-11.888-11.631
+  c0-6.348,4.845-11.343,11.888-11.343c3.429,0,7.338,1.63,9.162,3.745l4.209-4.016c-3.21-3.794-7.899-5.776-13.371-5.776
+  c-9.776,0-18.166,6.592-18.166,17.39c0,10.797,8.39,17.608,18.166,17.608c5.544,0,10.266-2.056,13.476-5.85l-4.38-3.942
+  C97.033,42.761,92.753,44.46,89.762,44.46z M107.979,50h6.002V1.946h-6.002V50z M122.002,50h6.014V16.002h-6.014V50z M125.037,3.974
+  c-2.111,0-3.937,1.734-3.937,4.027c0,2.292,1.825,4.027,3.937,4.027c2.226,0,3.881-1.735,3.881-4.027
+  C128.918,5.708,127.263,3.974,125.037,3.974z M162.015,20.791c-2.115-3.721-6.639-5.352-11.526-5.352
+  c-9.192,0-16.866,6.592-16.866,17.535c0,10.725,7.674,17.463,16.866,17.463c4.669,0,9.411-1.704,11.526-5.425v4.961h5.939V1.945
+  h-5.939V20.791z M150.453,44.437c-5.957,0-10.69-4.914-10.69-11.615s4.623-11.318,10.69-11.318c5.338,0,10.899,4.228,10.899,11.318
+  S156.332,44.437,150.453,44.437z M189.226,15.439c-9.438,0-17.029,6.592-17.029,17.39c0,10.797,7.592,17.608,17.029,17.608
+  c5.705,0,11.685-2.173,14.694-6.999l-4.618-3.602c-1.851,2.826-5.532,4.616-9.816,4.616c-5.629,0-10.045-3.433-10.831-8.686h26.951
+  c0.135-0.646,0.155-2.136,0.155-2.938C205.761,22.031,198.663,15.439,189.226,15.439z M178.654,30.13
+  c0.786-5.253,5.299-8.644,10.571-8.644c5.401,0,9.427,3.317,10.214,8.644H178.654z M226.924,15.438
+  c-9.472,0-17.437,6.675-17.437,17.392c0,10.716,7.965,17.608,17.437,17.608c9.544,0,17.58-6.893,17.58-17.608
+  C244.504,22.113,236.468,15.438,226.924,15.438z M226.919,44.469c-6.133,0-11.23-4.582-11.23-11.654
+  c0-6.832,5.098-11.333,11.23-11.333c6.213,0,11.311,4.501,11.311,11.333C238.229,39.887,233.132,44.469,226.919,44.469z"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                    
+                <div class="mobile-tools">
+                    <span class="nav-toggle"><span><i></i></span></span>
+                </div>
+                <div class="navigation">
+                    <span class="nav-toggle"><span><i></i></span></span>
+                    <nav>
+                        <ul class="main-nav order-2 order-md-2">
+                                                                                        <li><a href="https://clideo.com/pricing">Pricing</a></li>
+                                <li><a href="https://clideo.com/resources">Resources</a></li>
+                                                    </ul>
+                                                    <ul class="sign-nav reg-nav order-0 order-md-3">
+                                <li><a class="btn btn-blue1" data-toggle="modal" data-target="#modalSignIn" data-utm="header">Sign In</a></li>
+                            </ul>
+                                            </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+            
+    <div class="full-width-box index-title">
+        <div class="container">
+
+            <div class="hero-wrapper">
+                <div class="hero text-center">
+
+                    <div class="title text-center">
+                        <h1>Video tools. Online</h1>
+                        <h2>All-in-one easy-to-use online video tools</h2>
+                    </div>
+
+                    <nav class="tools-list no-select">
+                        <ul>
+                                                            
+                                                                    <li>
+                                        <a href="https://clideo.com/merge-video" class="item">
+                                            <span>
+                                                <i class="icon"><svg width="52px" height="52px" viewBox="0 0 52 52">
+        <path d="M32,19v-6H13v19h7v6h19V19H32z M15,30V15h15v4H20v11H15z M30,21v9h-8v-9H30z M37,36H22v-4h10V21h5V36z"></path>
+    </svg>
+</i>
+                                                <span>Merge</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                                                                            
+                                                                    <li>
+                                        <a href="https://clideo.com/compress-video" class="item">
+                                            <span>
+                                                <i class="icon"><svg width="52px" height="52px" viewBox="0 0 52 52">
+        <path d="M22.914,26l-5.707,5.707l-1.414-1.414L19.086,27H10v-2h9.086l-3.293-3.293l1.414-1.414L22.914,26z M42,25h-9.086l3.293-3.293l-1.414-1.414L29.086,26l5.707,5.707l1.414-1.414L32.914,27H42V25z M20.293,34.793l1.414,1.414L25,32.914V42h2v-9.086l3.293,3.293l1.414-1.414L26,29.086L20.293,34.793z M31.707,17.207l-1.414-1.414L27,19.086V10h-2v9.086l-3.293-3.293l-1.414,1.414L26,22.914L31.707,17.207z"></path>
+    </svg>
+</i>
+                                                <span>Compress</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                                                                            
+                                                                    <li>
+                                        <a href="https://clideo.com/resize-video" class="item">
+                                            <span>
+                                                <i class="icon"><svg width="52px" height="52px" viewBox="0 0 52 52">
+        <path d="M13,13v26h26V13H13z M37,37H15V15h22V37z M26.793,23.793L31.586,19H27v-2h8v8h-2v-4.586l-4.793,4.793L26.793,23.793z M25,35h-8v-8h2v4.586l4.793-4.793l1.414,1.414L20.414,33H25V35z"></path>
+    </svg>
+</i>
+                                                <span>Resize</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                                                                            
+                                                                    <li>
+                                        <a href="https://clideo.com/meme-maker" class="item">
+                                            <span>
+                                                <i class="icon"><svg width="52px" height="52px" viewBox="0 0 52 52">
+        <path d="M51,22h-4v-4H29v4h-6v-4H5v4H1v2h4v10h18V24h6v10h18V24h4V22z M21,32H7V20h14V32z M45,32H31V20h14V32z"></path>
+    </svg>
+</i>
+                                                <span>Meme</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                                                                            
+                                                                    <li>
+                                        <a href="https://clideo.com/cut-video" class="item">
+                                            <span>
+                                                <i class="icon"><svg width="52px" height="52px" viewBox="0 0 52 52">
+        <path d="M15.756,15.671c-0.371-0.409-0.339-1.042,0.071-1.412c0.41-0.372,1.042-0.338,1.413,0.07l7,7.738c0.371,0.409,0.339,1.042-0.071,1.412c-0.191,0.174-0.432,0.259-0.67,0.259c-0.273,0-0.544-0.111-0.742-0.329L15.756,15.671zM38,33.5c0,2.481-2.019,4.5-4.5,4.5S29,35.981,29,33.5c0-0.886,0.266-1.707,0.71-2.404L26,26.994l-3.71,4.102C22.733,31.793,23,32.614,23,33.5c0,2.481-2.019,4.5-4.5,4.5S14,35.981,14,33.5s2.019-4.5,4.5-4.5c0.87,0,1.676,0.26,2.365,0.688l13.897-15.359c0.371-0.409,1.002-0.442,1.412-0.07c0.409,0.37,0.441,1.003,0.07,1.412l-8.896,9.833l3.785,4.186C31.823,29.26,32.629,29,33.5,29C35.981,29,38,31.019,38,33.5z M21,33.5c0-1.379-1.122-2.5-2.5-2.5S16,32.121,16,33.5s1.122,2.5,2.5,2.5S21,34.879,21,33.5z M36,33.5c0-1.379-1.121-2.5-2.5-2.5S31,32.121,31,33.5s1.121,2.5,2.5,2.5S36,34.879,36,33.5z"></path>
+    </svg>
+</i>
+                                                <span>Cut</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                                                                            
+                                                                    <li>
+                                        <a href="https://clideo.com/video-maker" class="item">
+                                            <span>
+                                                <i class="icon"><svg width="52px" height="52px" viewBox="0 0 52 52">
+        <path d="M21,33.171L33.397,26L21,18.829V33.171z M23,22.296L29.403,26L23,29.704V22.296z M37,13H15c-2.757,0-5,2.243-5,5v16c0,2.757,2.243,5,5,5h22c2.757,0,5-2.243,5-5V18C42,15.243,39.757,13,37,13z M40,34c0,1.654-1.346,3-3,3H15c-1.654,0-3-1.346-3-3V18c0-1.654,1.346-3,3-3h22c1.654,0,3,1.346,3,3V34z"></path>
+    </svg>
+</i>
+                                                <span>Video maker</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                                                                            
+                                                                    <li>
+                                        <a href="https://clideo.com/slideshow-maker" class="item">
+                                            <span>
+                                                <i class="icon"><svg width="52px" height="52px" viewBox="0 0 52 52">
+        <path d="M10,39h24V21H10V39z M12,23h20v14H12V23z M15,17h23v17h-2V19H15V17z M42,13v16h-2V15H20v-2H42z"></path>
+    </svg>
+</i>
+                                                <span>Slideshow</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                                                                            
+                                                                    <li>
+                                        <a href="https://clideo.com/crop-video" class="item">
+                                            <span>
+                                                <i class="icon"><svg width="52px" height="52px" viewBox="0 0 52 52">
+        <path d="M32,17H17v23h-2v-3h-3v-2h3V15h17V17z M40,15h-3v-3h-2v23H20v2h17V17h3V15z"></path>
+    </svg>
+</i>
+                                                <span>Crop</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                                                                            
+                                                                    <li>
+                                        <a href="https://clideo.com/rotate-video" class="item">
+                                            <span>
+                                                <i class="icon"><svg width="52px" height="52px" viewBox="0 0 52 52">
+        <path d="M38.3,26c0,3.285-1.279,6.374-3.603,8.697S29.285,38.3,26,38.3s-6.374-1.279-8.697-3.603S13.7,29.285,13.7,26h2c0,2.751,1.071,5.338,3.017,7.283S23.249,36.3,26,36.3s5.338-1.071,7.283-3.017S36.3,28.751,36.3,26s-1.071-5.338-3.017-7.283S28.751,15.7,26,15.7c-2.617,0-5.079,0.979-6.988,2.749L21.563,21H15v-6.563l2.598,2.598C19.885,14.889,22.849,13.7,26,13.7c3.285,0,6.374,1.279,8.697,3.603S38.3,22.715,38.3,26z"></path>
+    </svg>
+</i>
+                                                <span>Rotate</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                                                                    </ul>
+                    </nav>
+
+                    <p class="buttons">
+                        <a href="https://clideo.com/tools" class="btn btn-all-tools btn-pill text-left">All tools</a>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="full-width-box bg-gray landing-video-examples">
+        <div class="bg-skew-top"></div>
+        <div class="container text-center">
+
+            <div class="video-examples no-select">
+                <h2 class="section-title">Made with our tools</h2>
+                <div class="ui-tablet">
+                    <div class="ui-player">
+                        <video preload="auto" loop muted playsinline webkit-playsinline>
+                            <source data-type="av1" src="https://static.clideo.com/media/loop-video.av1.mp4" type="video/mp4; codecs=av01.0.04M.08">
+                            <source data-type="hvc" src="https://static.clideo.com/media/loop-video.hvc.mp4" type="video/mp4; codecs=hvc1.1.6.L90.90">
+                            <source data-type="avc" src="https://static.clideo.com/media/loop-video.avc.mp4" type="video/mp4; codecs=avc1.42C01E">
+                        </video>
+                        <div class="spinner-border visible"></div>
+                        <div class="media-controls">
+                            <span class="mc-play"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-list">
+                    <ul>
+                        <li class="current"
+                            data-src-av1="https://static.clideo.com/media/loop-video.av1.mp4" data-type-av1="video/mp4; codecs=av01.0.04M.08"
+                            data-src-hvc="https://static.clideo.com/media/loop-video.hvc.mp4" data-type-hvc="video/mp4; codecs=hvc1.1.6.L90.90"
+                            data-src-avc="https://static.clideo.com/media/loop-video.avc.mp4" data-type-avc="video/mp4; codecs=avc1.42C01E"
+                        >
+                            Loop
+                        </li>
+                        <li
+                            data-src-av1="https://static.clideo.com/media/stop-motion-processed.av1.mp4" data-type-av1="video/mp4; codecs=av01.0.04M.08"
+                            data-src-hvc="https://static.clideo.com/media/stop-motion-processed.hvc.mp4" data-type-hvc="video/mp4; codecs=hvc1.1.6.L90.90"
+                            data-src-avc="https://static.clideo.com/media/stop-motion-processed.avc.mp4" data-type-avc="video/mp4; codecs=avc1.42C01E"
+                        >
+                            Stop Motion
+                        </li>
+                        <li
+                            data-src-av1="https://static.clideo.com/media/reverse-video.av1.mp4" data-type-av1="video/mp4; codecs=av01.0.04M.08"
+                            data-src-hvc="https://static.clideo.com/media/reverse-video.hvc.mp4" data-type-hvc="video/mp4; codecs=hvc1.1.6.L90.90"
+                            data-src-avc="https://static.clideo.com/media/reverse-video.avc.mp4" data-type-avc="video/mp4; codecs=avc1.42C01E"
+                        >
+                            Reverse
+                        </li>
+                        <li
+                            data-src-av1="https://static.clideo.com/media/meme-maker-processed.av1.mp4" data-type-av1="video/mp4; codecs=av01.0.04M.08"
+                            data-src-hvc="https://static.clideo.com/media/meme-maker-processed.hvc.mp4" data-type-hvc="video/mp4; codecs=hvc1.1.6.L90.90"
+                            data-src-avc="https://static.clideo.com/media/meme-maker-processed.avc.mp4" data-type-avc="video/mp4; codecs=avc1.42C01E"
+                        >
+                            Meme
+                        </li>
+                        <li
+                            data-src-av1="https://static.clideo.com/media/slow-motion-index.av1.mp4" data-type-av1="video/mp4; codecs=av01.0.04M.08"
+                            data-src-hvc="https://static.clideo.com/media/slow-motion-index.hvc.mp4" data-type-hvc="video/mp4; codecs=hvc1.1.6.L90.90"
+                            data-src-avc="https://static.clideo.com/media/slow-motion-index.avc.mp4" data-type-avc="video/mp4; codecs=avc1.42C01E"
+                        >
+                            Speed
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="full-width-box index-stat">
+        <div class="container">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-12 col-sm-4 text-center">
+                    <h3>4.1M +</h3>
+                    <p>Monthly users</p>
+                </div>
+                <div class="col-12 col-sm-4 text-center">
+                    <h3>25.6M +</h3>
+                    <p>Videos made</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <footer class="footer">
+        <div class="container">
+        <div class="footer-bottom">
+            <div class="footer-nav">
+                <nav>
+                    <ul>
+                        <li><a href="/terms">Terms of Use</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/imprint">Imprint</a></li>
+                                                <li class="divider"><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="copyright text-center">© 2014–2020 Softo ltd. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+        </div>
+
+        <div class="modal fade" id="modalSignIn" tabindex="-1" role="dialog" aria-labelledby="modalSignInTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body text-center">
+                    <h3 id="modalSignInTitle">Sign in to continue</h3>
+                    <h4 class="mb-30 mb-md-40">Get incredible features and save you videos to your account</h4>
+                    <div class="centered-box">
+                        <p class="buttons">
+                            <a href="https://clideo.com/auth/facebook" class="btn btn-soc-f d-block">
+                                <svg width="24" height="24" viewBox="0 0 22 22">
+                                    <path d="M0,0v22h22V0H0z M18.039,5.938L18.039,5.938H16.5c-0.988,0-1.1,0.331-1.1,1.1V8.47h2.312L17.6,11h-2.088v7.7h-3.523V11H10.67V8.362h1.32v-1.65c0-2.2,0.88-3.412,3.41-3.412h2.639V5.938z"></path>
+                                </svg>
+                                Sign in via <b>Facebook</b>                            </a>
+                            <a href="https://clideo.com/auth/google" class="btn btn-soc-g d-block">
+                                <svg width="24" height="24" viewBox="0 0 21 21">
+                                    <path d="M10.504 8.65v4.013h5.716c-.746 2.43-2.778 4.172-5.716 4.172A6.337 6.337 0 0 1 4.169 10.5a6.334 6.334 0 0 1 6.335-6.335c1.573 0 3.009.578 4.116 1.529l2.953-2.957A10.46 10.46 0 0 0 10.503 0C4.703 0 0 4.702 0 10.5S4.702 21 10.504 21c8.814 0 10.76-8.244 9.896-12.335l-9.896-.014z"></path>
+                                </svg>
+                                Sign in via <b>Google</b>                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="modal ui-modal-plans no-select" id="modalPlans" tabindex="-1" role="dialog"
+     aria-labelledby="modalPlansTitle" aria-hidden="true">
+    <div class="ui-modal-container">
+        <div class="bg-top"></div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+        <div class="ui-modal-inner">
+            <div class="ui-modal-body">
+
+                <h2 class="ui-modal-title text-center" id="modalPlansTitle"
+                    data-one="Remove watermark"
+                    data-no-one="Upgrade your account"
+                    data-edit-media="Upgrade to edit results"
+                >Remove watermark</h2>
+                <div class="plans">
+                    <div class="card" style="display: none">
+                        <div class="card-body">
+                            <h6>This video</h6>
+                            <div class="price">
+                                <span>$</span>
+                                <b>5</b>
+                            </div>
+                            <div class="price-caption">
+                                one time payment
+                            </div>
+                            <div class="buttons">
+                                <button type="button" class="btn btn-lg btn-blue1" data-plan="clid_one" data-file-id="0" >
+                                    Continue
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                                        
+                    <div class="card tall">
+                        <div class="card-header text-uppercase  d-none">  
+                            Most popular
+                        </div>
+                        <div class="card-body">
+                            <h6 data-one="Unlimited videos"
+                                data-no-one="Unlimited videos<br/>without watermarks"
+                                data-edit-media="Edit videos"
+                            >Unlimited videos</h6>
+                            <div class="price">
+                                <span>$</span>
+                                <b>9</b>
+                            </div>
+                            <div class="price-caption">
+                                per month<br>
+                                cancel anytime
+                            </div>
+                            <div class="buttons">
+                                                                    <button type="button" class="btn btn-lg btn-blue1" data-plan="sub_clid_month" >
+                                        Continue
+                                    </button>
+                                                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header text-uppercase">
+                            Most popular
+                        </div>
+                        <div class="card-body">
+                            <h6 data-one="Unlimited videos"
+                                data-no-one="Unlimited videos<br/>without watermarks"
+                                data-edit-media="Edit videos"
+                            >Unlimited videos</h6>
+                            <div class="price">
+                                <span>$</span>
+                                <b>72</b>
+                            </div>
+                            <div class="price-caption" style="margin-bottom: 50px">
+                                per year<br>
+                                $6 / month
+                            </div>
+                            <div style="margin-bottom: 30px; line-height: 19px; color: #f22655">
+                                Save $36
+                            </div>
+                            <div class="buttons">
+                                                                    <button type="button" class="btn btn-lg btn-blue1" data-plan="sub_clid_year" >
+                                        Continue
+                                    </button>
+                                                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="text-center text-green">
+                    Trusted by over 4 million users every month
+                </div>
+
+                <div class="text-center text-note">
+                    By submitting payment information, you are acknowledging our <a href="https://clideo.com/refund-policy" target="_blank">Refund Policy</a>.
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+        
+        <script type="text/javascript" src="https://static.clideo.com/assets/js/manifest.js?id=83adbde5cba1be644f844" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://static.clideo.com/assets/js/vendor-common.js?id=b61b014e0666bdcd943e6" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://static.clideo.com/assets/js/app.js?id=b5543edcaaa7516583eb6" crossorigin="anonymous"></script>
+
+        
+    </body>
+</html>
