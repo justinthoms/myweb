@@ -9,7 +9,7 @@ netsh int ipv4 add dns name="%INTERFACE%" %DNS2% index=2
 
 ipconfig /flushdns
 
-pause
+
 echo.
 echo.
 echo.
@@ -27,7 +27,6 @@ echo  .++:  `osssssss+/.              `:ossss+- ./ossso/.       -+osssssssso+:-o
 echo.
 echo. 
 echo.
-echo by justin                                                                                                    
+echo by justin
+timeout /t 20 /nobreak
 
-
-pause
