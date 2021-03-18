@@ -6,31 +6,9 @@
     <!-- <script data-ad-client="ca-pub-2196928611152991" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LetZ7cZAAAAAOQhWTARvAZVJNF0g8Hrj41n7aI9"></script> -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150899596-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-150899596-1');
-    // function onClick(e) {
-    //     e.preventDefault();
-    //     grecaptcha.ready(function() {
-    //       grecaptcha.execute('6LetZ7cZAAAAAOQhWTARvAZVJNF0g8Hrj41n7aI9', {action: 'get_token'}).then(function(token) {
-    //         fetch('/get_token',).then(function(response) {
-    //             return response.json();
-    //             }).then(function(data) {
-    //             console.log(data);
-    //             }).catch(function() {
-    //             console.log("Booo");
-    //             });
-    //       });
-    //     });
-    //   }
-    </script>
 
     <link rel="stylesheet" href="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.css" type="text/css">
-    <script src="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .container{
