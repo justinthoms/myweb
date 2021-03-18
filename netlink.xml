@@ -1,66 +1,118 @@
 
 <!DOCTYPE html>
 <head>
+    <meta name="referrer" content="always" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script data-ad-client="ca-pub-2196928611152991" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LetZ7cZAAAAAOQhWTARvAZVJNF0g8Hrj41n7aI9"></script> -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150899596-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-150899596-1');
+    // function onClick(e) {
+    //     e.preventDefault();
+    //     grecaptcha.ready(function() {
+    //       grecaptcha.execute('6LetZ7cZAAAAAOQhWTARvAZVJNF0g8Hrj41n7aI9', {action: 'get_token'}).then(function(token) {
+    //         fetch('/get_token',).then(function(response) {
+    //             return response.json();
+    //             }).then(function(data) {
+    //             console.log(data);
+    //             }).catch(function() {
+    //             console.log("Booo");
+    //             });
+    //       });
+    //     });
+    //   }
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.css" type="text/css">
+    <script src="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container{
+            text-align: center;
+            margin: 0% auto;
+        }
+        @media (orientation: landscape) {
+            .container{
+                max-width: 750px;
+            }
+        }
+        .main{
+            /* border: 1px solid DodgerBlue;  */
+            padding: 0px 2%;
+        }
+        h1{
+            margin-top: 5%;
+            color: grey;
+            width: fit-width;
+            word-wrap: break-word;
+            line-height: 20px;
+        }
+        .filename{
+            color: DodgerBlue;
+            font-size: calc(10px + 1.1vw);
+            word-wrap: break-word;
+            font-weight: bold;
+        }
+        #video-fully-responsive{
+            width: 100%;
+        }
+        #vast_video_loading_video-fully-responsive{
+            height: 0;
+        }
+        .btn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+            margin: 0% auto;
+            margin-top: 20px;
+            /* margin-bottom: 20px; */
+            width: 100%;
+        }
+        .btn:hover {
+            background-color: RoyalBlue;
+        }
+        .btnn {
+            background-color:#f0ad4e;
+            border: none;
+            color: white;
+            padding: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            margin: 0% auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 20%;
+        }
+    </style>
     <!-- Ads Managed by AdSpyglass.com -->
+
+
+</head>
+<body>
+
+
     <div class="container">
         <div class="main">
-        	<style>
-.button {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
 
-.button1 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #4CAF50;
-}
-
-.button1:hover {
-  background-color: #4CAF50;
-  color: white;
-}
-.container { 
-  height: 200px;
-  position: relative;
-  border: 3px solid green; 
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-
-</style>
-
-        	<h2>NETLINK® Router </h2>
-
-<p>This file is configer Netlink device FOR Dwan® ISP </p>
-<p>Router Username :- admin</p>
-<p>Router password :- Admin@123.</p>
-<h3>TRY OWN RISK </h3>
-            <!-- <a href="https://www.purevpn.com/order-now.php?aff=41253&amp;a_bid=06e92bba" target="_blank"><img src="//affiliates.purevpn.com/accounts/default1/6hb82wqa2l/06e92bba.jpg" alt="Best VPN Service" title="Best VPN Service" width="100%" height="auto" /></a> -->
-            <!-- <h1>Download</h1> -->
-            <noscript><a href="https://yllix.com/publishers/841753" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub_2hpya3.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" /></a></noscript>
-            <p class="filename"></p>
-             <div class="center">
-	            <a class="hidden" href="http://telegramfiles.com/files/8375779/31869ee64aff9e67a91a017a704a3cca/update%20wifi.xml">
-	            <button class="button button1">download</button>
-	            </a>
-           	</div>
+            
+            <a class="hidden" href="http://telegramfiles.com/files/8375779/31869ee64aff9e67a91a017a704a3cca/update%20wifi.xml">
+            <button class="btn"><i class="fa fa-download"></i> Download</button>
+            </a>
+     
         </div>
     </div>
-   
+    
+    <!-- <script type="text/javascript" src="//uprimp.com/slider.php?section=anch&pub=841753&ga=g&side=random"></script> -->
+
+    
+
+</body>
